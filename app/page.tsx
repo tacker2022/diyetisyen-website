@@ -9,6 +9,7 @@ import Gallery from "@/components/Gallery";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import AnnouncementPopup from "@/components/AnnouncementPopup";
+import WishTicker from "@/components/WishTicker";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <BookSection />
       <Gallery />
       <Contact />
+      <WishTicker />
       <Footer />
       <AnnouncementPopup />
     </main>
