@@ -26,7 +26,7 @@ export default function DeveloperSignature() {
                         <div className="relative w-24 h-24 mb-4 rounded-full p-[2px] bg-gradient-to-tr from-[#D4AF37] to-transparent">
                             <div className="w-full h-full rounded-full overflow-hidden bg-zinc-900 relative">
                                 <Image
-                                    src="/images/developer-profile.png"
+                                    src="/images/developer-profile.jpg"
                                     alt="Talha Çalargün"
                                     fill
                                     className="object-cover"
