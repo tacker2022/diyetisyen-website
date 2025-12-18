@@ -6,7 +6,7 @@ export default function Gallery() {
         "/images/uploaded_image_0_1766080628443.png",
         "/images/gallery-update-1.jpg",
         "/images/gallery-update-2.jpg",
-        "/images/uploaded_image_2_1766080628443.jpg",
+        "/images/gallery-update-3.jpg",
     ];
 
     return (
