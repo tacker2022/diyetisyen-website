@@ -83,10 +83,18 @@ export default function Navbar() {
                                     {link.name}
                                 </Link>
                             ))}
-                            <div className="pt-4 flex gap-4">
-                                <a href="https://wa.me/905400012324" className="flex-1 bg-sage text-white text-center py-3 rounded-lg font-medium">
+                            <div className="pt-4 flex flex-col gap-4">
+                                <a href="https://wa.me/905400012324" className="bg-sage text-white text-center py-3 rounded-lg font-medium shadow-md hover:bg-gold transition-colors">
                                     Randevu Al
                                 </a>
+                                <div className="flex justify-center gap-6 pt-2">
+                                    <a href="https://www.instagram.com/diyetisyenyesimnemutlu/" target="_blank" rel="noopener noreferrer" className="text-charcoal hover:text-sage transition-colors">
+                                        <Instagram size={24} />
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/ye%C5%9Fim-nemutlu-torun-33692a177/?originalSubdomain=tr" target="_blank" rel="noopener noreferrer" className="text-charcoal hover:text-sage transition-colors">
+                                        <Linkedin size={24} />
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </motion.div>

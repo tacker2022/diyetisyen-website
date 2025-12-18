@@ -25,16 +25,12 @@ export default function DeveloperSignature() {
                         {/* Profile Image Wrapper */}
                         <div className="relative w-24 h-24 mb-4 rounded-full p-[2px] bg-gradient-to-tr from-[#D4AF37] to-transparent">
                             <div className="w-full h-full rounded-full overflow-hidden bg-zinc-900 relative">
-                                {/* Placeholder for now, user can update with actual photo */}
-                                <div className="absolute inset-0 flex items-center justify-center bg-white/5 text-white/20 text-xs">
-                                    IMG
-                                </div>
-                                {/* <Image
-                                    src="/images/developer-profile.png" 
+                                <Image
+                                    src="/images/developer-profile.png"
                                     alt="Talha Çalargün"
                                     fill
                                     className="object-cover"
-                                /> */}
+                                />
                             </div>
                         </div>
 
