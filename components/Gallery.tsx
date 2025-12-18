@@ -4,7 +4,7 @@ import { Instagram } from "lucide-react";
 export default function Gallery() {
     const images = [
         "/images/uploaded_image_0_1766080628443.png",
-        "/images/uploaded_image_3_1766080628443.jpg",
+        "/images/gallery-update-1.jpg",
         "/images/uploaded_image_4_1766080628443.png",
         "/images/uploaded_image_2_1766080628443.jpg",
     ];
