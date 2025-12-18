@@ -7,7 +7,7 @@ export default function Footer() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col md:flex-row justify-between items-center gap-6">
                     <div className="text-center md:text-left">
-                        <h3 className="font-display text-2xl font-bold text-sage mb-2">Dyt. Yeşim Nemutlu Torun</h3>
+                        <h3 className="font-display text-2xl font-bold text-sage mb-2">Uzman Diyetisyen Yeşim Nemutlu Torun</h3>
                         <p className="text-white/60 text-sm">
                             Sağlıklı yaşam ve beslenme danışmanlığı.
                         </p>
@@ -30,7 +30,7 @@ export default function Footer() {
                 </div>
 
                 <div className="mt-12 pt-8 border-t border-white/10 text-center text-xs text-white/40">
-                    &copy; {new Date().getFullYear()} Dyt. Yeşim Nemutlu Torun. Tüm hakları saklıdır.
+                    &copy; {new Date().getFullYear()} Uzman Diyetisyen Yeşim Nemutlu Torun. Tüm hakları saklıdır.
                 </div>
             </div>
         </footer>

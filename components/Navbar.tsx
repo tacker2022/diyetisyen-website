@@ -22,7 +22,7 @@ export default function Navbar() {
                 <div className="flex justify-between items-center h-20">
                     <div className="flex-shrink-0 flex items-center">
                         <Link href="/" className="font-display text-2xl text-sage font-bold tracking-tight">
-                            Dyt. Yeşim Nemutlu Torun
+                            Uzman Diyetisyen Yeşim Nemutlu Torun
                         </Link>
                     </div>
 
