@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Instagram, Linkedin } from "lucide-react";
+import DeveloperSignature from "./DeveloperSignature";
 
 export default function Footer() {
     return (
@@ -29,8 +30,11 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="mt-12 pt-8 border-t border-white/10 text-center text-xs text-white/40">
-                    &copy; {new Date().getFullYear()} Uzman Diyetisyen Yeşim Nemutlu Torun. Tüm hakları saklıdır.
+                <div className="mt-12 pt-8 border-t border-white/10 text-center flex flex-col items-center gap-4">
+                    <p className="text-xs text-white/40">
+                        &copy; {new Date().getFullYear()} Uzman Diyetisyen Yeşim Nemutlu Torun. Tüm hakları saklıdır.
+                    </p>
+                    <DeveloperSignature />
                 </div>
             </div>
         </footer>
