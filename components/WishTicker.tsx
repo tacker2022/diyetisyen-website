@@ -7,10 +7,10 @@ export default function WishTicker() {
         <div className="bg-sage py-4 overflow-hidden border-t border-b border-white/10 relative z-20">
             <div className="flex select-none">
                 <motion.div
-                    animate={{ x: [0, -1000] }}
+                    animate={{ x: "-100%" }}
                     transition={{
                         repeat: Infinity,
-                        duration: 20,
+                        duration: 30,
                         ease: "linear",
                     }}
                     className="flex whitespace-nowrap min-w-full"
@@ -25,13 +25,13 @@ export default function WishTicker() {
                     ))}
                 </motion.div>
                 <motion.div
-                    animate={{ x: [0, -1000] }}
+                    animate={{ x: "-100%" }}
                     transition={{
                         repeat: Infinity,
-                        duration: 20,
+                        duration: 30,
                         ease: "linear",
                     }}
-                    className="flex whitespace-nowrap min-w-full"
+                    className="flex whitespace-nowrap min-w-full absolute left-full top-0 pl-16 md:pl-0"
                     aria-hidden="true"
                 >
                     {[...Array(10)].map((_, i) => (
