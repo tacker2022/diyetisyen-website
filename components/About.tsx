@@ -20,7 +20,7 @@ export default function About() {
                             {/* Image Placeholder - User provided portrait */}
                             {/* Ideally we put image_1 or similar here */}
                             <Image
-                                src="/images/uploaded_image_2_1766080628443.jpg"
+                                src="/images/about-poster.jpg"
                                 alt="Yeşim Nemutlu Torun Profil"
                                 fill
                                 className="object-cover"
