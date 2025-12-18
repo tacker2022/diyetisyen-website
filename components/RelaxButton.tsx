@@ -7,14 +7,13 @@ export default function RelaxButton() {
     const [isPlaying, setIsPlaying] = useState(false);
     const audioRef = useRef<HTMLAudioElement | null>(null);
 
-    // Using a high-quality royalty-free nature sound (Forest/Birds/Stream mix)
-    // Source: Pixabay (Royalty Free) - Placeholder URL that works
-    const AUDIO_URL = "https://cdn.pixabay.com/download/audio/2022/02/07/audio_6c9f653b66.mp3?filename=forest-lullaby-110624.mp3";
+    // Using a direct, reliable MP3 link from Pixabay (Forest sounds with birds)
+    const AUDIO_URL = "https://cdn.pixabay.com/audio/2022/05/27/audio_1808fbf07a.mp3";
 
     useEffect(() => {
         audioRef.current = new Audio(AUDIO_URL);
         audioRef.current.loop = true;
-        audioRef.current.volume = 0.5;
+        audioRef.current.volume = 1.0;
 
         return () => {
             if (audioRef.current) {
