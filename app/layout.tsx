@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import { Inter, Lato } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-const lato = Lato({ 
-  subsets: ["latin"], 
+const lato = Lato({
+  subsets: ["latin"],
   weight: ["300", "400", "700"],
-  variable: "--font-lato" 
+  variable: "--font-lato"
 });
 
 export const metadata: Metadata = {
@@ -23,6 +24,7 @@ export default function RootLayout({
     <html lang="tr">
       <body className={`${inter.variable} ${lato.variable} font-body bg-cream text-charcoal antialiased`}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
