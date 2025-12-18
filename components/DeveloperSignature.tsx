@@ -40,10 +40,10 @@ export default function DeveloperSignature() {
                         </p>
 
                         <div className="flex items-center gap-4 text-white/40">
-                            <a href="#" className="hover:text-[#D4AF37] transition-colors"><Linkedin size={18} /></a>
-                            <a href="#" className="hover:text-[#D4AF37] transition-colors"><Instagram size={18} /></a>
-                            <a href="#" className="hover:text-[#D4AF37] transition-colors"><Phone size={18} /></a>
-                            <a href="#" className="hover:text-[#D4AF37] transition-colors"><Globe size={18} /></a>
+                            <a href="https://www.linkedin.com/in/talhaemrecalargun/" target="_blank" rel="noopener noreferrer" className="hover:text-[#D4AF37] transition-colors"><Linkedin size={18} /></a>
+                            <a href="https://www.instagram.com/talhacalargun/" target="_blank" rel="noopener noreferrer" className="hover:text-[#D4AF37] transition-colors"><Instagram size={18} /></a>
+                            <a href="https://api.whatsapp.com/send/?phone=905372939874&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="hover:text-[#D4AF37] transition-colors"><Phone size={18} /></a>
+                            <a href="https://talhacalargun.com/" target="_blank" rel="noopener noreferrer" className="hover:text-[#D4AF37] transition-colors"><Globe size={18} /></a>
                         </div>
                     </div>
 
