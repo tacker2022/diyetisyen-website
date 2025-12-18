@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Instagram } from "lucide-react";
+import { Instagram, Linkedin } from "lucide-react";
 
 export default function Footer() {
     return (
@@ -22,6 +22,9 @@ export default function Footer() {
                     <div className="flex gap-4">
                         <a href="https://www.instagram.com/diyetisyenyesimnemutlu/" target="_blank" className="bg-white/10 p-2 rounded-full hover:bg-sage transition-colors">
                             <Instagram size={20} />
+                        </a>
+                        <a href="https://www.linkedin.com/in/ye%C5%9Fim-nemutlu-torun-33692a177/?originalSubdomain=tr" target="_blank" className="bg-white/10 p-2 rounded-full hover:bg-sage transition-colors">
+                            <Linkedin size={20} />
                         </a>
                     </div>
                 </div>

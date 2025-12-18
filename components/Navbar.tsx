@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { Menu, X, Instagram, Phone } from "lucide-react";
+import { Menu, X, Instagram, Phone, Linkedin } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function Navbar() {
@@ -43,6 +43,9 @@ export default function Navbar() {
                     <div className="hidden md:flex items-center space-x-4">
                         <a href="https://www.instagram.com/diyetisyenyesimnemutlu/" target="_blank" rel="noopener noreferrer" className="text-sage hover:text-gold transition-colors">
                             <Instagram size={20} />
+                        </a>
+                        <a href="https://www.linkedin.com/in/ye%C5%9Fim-nemutlu-torun-33692a177/?originalSubdomain=tr" target="_blank" rel="noopener noreferrer" className="text-sage hover:text-gold transition-colors">
+                            <Linkedin size={20} />
                         </a>
                         <a href="https://wa.me/905400012324" target="_blank" rel="noopener noreferrer" className="bg-sage text-white px-4 py-2 rounded-full hover:bg-gold transition-colors duration-300 flex items-center gap-2 font-medium text-sm">
                             <Phone size={16} />
