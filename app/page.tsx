@@ -10,6 +10,7 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import AnnouncementPopup from "@/components/AnnouncementPopup";
 import WishTicker from "@/components/WishTicker";
+import RelaxButton from "@/components/RelaxButton";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <WishTicker />
       <Footer />
       <AnnouncementPopup />
+      <RelaxButton />
     </main>
   );
 }
