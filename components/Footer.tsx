@@ -35,6 +35,9 @@ export default function Footer() {
                         &copy; {new Date().getFullYear()} Uzman Diyetisyen Yeşim Nemutlu Torun. Tüm hakları saklıdır.
                     </p>
                     <DeveloperSignature />
+                    <p className="text-[10px] text-white/20 mt-4 italic hover:text-white/40 transition-colors cursor-default">
+                        Bu web sitesi, bir danışanın içten bir teşekkür hediyesidir.
+                    </p>
                 </div>
             </div>
         </footer>
