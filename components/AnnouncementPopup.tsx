@@ -27,11 +27,6 @@ export default function AnnouncementPopup() {
         localStorage.setItem("hasSeenMovingPopup", "true");
     };
 
-    const handleCtaClick = () => {
-        handleClose();
-        // Determine target based on click, smooth scroll logic is handled by Next.js Link text hash usually, 
-        // but if we want to be sure, we close just before.
-    };
 
     return (
         <AnimatePresence>
@@ -78,13 +73,6 @@ export default function AnnouncementPopup() {
                                 Sağlığınıza aynı özenle, daha ferah ve modern bir ortamda eşlik ediyoruz.
                             </p>
 
-                            <Link
-                                href="#iletisim"
-                                onClick={handleCtaClick}
-                                className="inline-flex items-center justify-center w-full px-6 py-3.5 bg-sage text-white font-bold rounded-xl hover:bg-gold transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 duration-200"
-                            >
-                                Yeni Adresimizi Gör
-                            </Link>
                         </div>
                     </motion.div>
                 </div>
