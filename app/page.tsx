@@ -13,6 +13,7 @@ import WishTicker from "@/components/WishTicker";
 import RelaxButton from "@/components/RelaxButton";
 import BmiCalculator from "@/components/BmiCalculator";
 import WeeklyTip from "@/components/WeeklyTip";
+import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <About />
       <BmiCalculator />
       <BookSection />
+      <Testimonials />
       <Gallery />
       <Contact />
       <WishTicker />
