@@ -1,21 +1,33 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useState } from "react";
 import { Linkedin, Instagram, Phone, Globe } from "lucide-react";
 import Image from "next/image";
 
 export default function DeveloperSignature() {
+    const [isOpen, setIsOpen] = useState(false);
+
     return (
-        <div className="relative group inline-block">
+        <div
+            className="relative inline-block"
+            onMouseEnter={() => setIsOpen(true)}
+            onMouseLeave={() => setIsOpen(false)}
+            onClick={() => setIsOpen(!isOpen)}
+        >
             {/* Signature Text */}
             <div className="flex items-center gap-1 text-xs text-white/30 hover:text-white/60 transition-colors cursor-pointer select-none">
                 <span>&lt;/&gt;</span>
                 <span>Developed by</span>
-                <span className="font-medium text-white/50 group-hover:text-white transition-colors">Talha Çalargün</span>
+                <span className={`font-medium transition-colors ${isOpen ? "text-white" : "text-white/50"}`}>Talha Çalargün</span>
             </div>
 
             {/* Hover Card */}
-            <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-4 w-72 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-bottom translate-y-2 group-hover:translate-y-0 z-50">
+            <div
+                className={`absolute bottom-full left-1/2 -translate-x-1/2 mb-4 w-72 transition-all duration-300 transform origin-bottom z-50 ${isOpen
+                        ? "opacity-100 visible translate-y-0"
+                        : "opacity-0 invisible translate-y-2 pointer-events-none"
+                    }`}
+            >
                 <div className="bg-[#0a0a0a] rounded-2xl shadow-2xl p-6 border border-white/5 relative overflow-hidden">
                     {/* Decorative Top Glow */}
                     <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent opacity-50" />
