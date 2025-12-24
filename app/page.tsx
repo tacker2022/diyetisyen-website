@@ -12,12 +12,14 @@ import AnnouncementPopup from "@/components/AnnouncementPopup";
 import WishTicker from "@/components/WishTicker";
 import RelaxButton from "@/components/RelaxButton";
 import BmiCalculator from "@/components/BmiCalculator";
+import WeeklyTip from "@/components/WeeklyTip";
 
 export default function Home() {
   return (
     <main className="min-h-screen">
       <Navbar />
       <Hero />
+      <WeeklyTip />
       <Services />
       <About />
       <BmiCalculator />
