@@ -14,6 +14,7 @@ import RelaxButton from "@/components/RelaxButton";
 import BmiCalculator from "@/components/BmiCalculator";
 import WeeklyTip from "@/components/WeeklyTip";
 import Testimonials from "@/components/Testimonials";
+import FAQ from "@/components/FAQ";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
       <BookSection />
       <Testimonials />
       <Gallery />
+      <FAQ />
       <Contact />
       <WishTicker />
       <Footer />
