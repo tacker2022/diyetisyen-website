@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Lato } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
@@ -25,6 +26,7 @@ export default function RootLayout({
       <body className={`${inter.variable} ${lato.variable} font-body bg-cream text-charcoal antialiased`}>
         {children}
         <Analytics />
+        <GoogleAnalytics gaId="G-RKRYCY28EW" />
       </body>
     </html>
   );
