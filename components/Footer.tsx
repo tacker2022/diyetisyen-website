@@ -9,8 +9,13 @@ export default function Footer() {
                 <div className="flex flex-col md:flex-row justify-between items-center gap-6">
                     <div className="text-center md:text-left">
                         <h3 className="font-display text-2xl font-bold text-sage mb-2">Uzman Diyetisyen Yeşim Nemutlu Torun</h3>
-                        <p className="text-white/60 text-sm">
+                        <p className="text-white/60 text-sm mb-4">
                             Sağlıklı yaşam ve beslenme danışmanlığı.
+                        </p>
+                        <p className="text-white/40 text-xs leading-relaxed max-w-sm">
+                            Avrupa Konutları Residence, Yamanevler Mah.<br />
+                            Dr. Fazıl Küçük Cd. No:12 A1 Blok Daire 127<br />
+                            34768 Ümraniye / İstanbul
                         </p>
                     </div>
 

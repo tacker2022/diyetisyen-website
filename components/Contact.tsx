@@ -22,8 +22,9 @@ export default function Contact() {
                                 </div>
                                 <div>
                                     <h3 className="text-lg font-bold text-charcoal">Adres</h3>
-                                    <p className="text-charcoal/70">Avrupa Konutları</p>
-                                    <p className="text-charcoal/70">Yamanevler, Ümraniye / İstanbul</p>
+                                    <p className="text-charcoal/70">Avrupa Konutları Residence</p>
+                                    <p className="text-charcoal/70">Yamanevler Mah. Dr. Fazıl Küçük Cd. No:12</p>
+                                    <p className="text-charcoal/70">A1 Blok Daire 127, 34768 Ümraniye / İstanbul</p>
                                 </div>
                             </div>
 
