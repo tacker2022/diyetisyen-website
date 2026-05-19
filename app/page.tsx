@@ -15,6 +15,7 @@ import BmiCalculator from "@/components/BmiCalculator";
 import WeeklyTip from "@/components/WeeklyTip";
 import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
+import ProcessRoadmap from "@/components/ProcessRoadmap";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       <Hero />
       <WeeklyTip />
       <Services />
+      <ProcessRoadmap />
       <About />
       <BmiCalculator />
       <BookSection />

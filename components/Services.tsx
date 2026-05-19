@@ -3,33 +3,39 @@ import { Scale, HeartPulse, Brain, Apple, Activity, Baby } from "lucide-react";
 const services = [
     {
         title: "Kilo Yönetimi",
-        description: "Kişisel metabolik hızınıza ve yaşam tarzınıza uygun, sürdürülebilir kilo alma veya verme programları.",
+        description: "Bireysel metabolizma hızınıza, hormonal dengenize ve günlük rutininize göre tasarlanan, kalıcı ve sağlıklı kilo kontrol programları.",
         icon: Scale,
+        badge: "Kişiye Özel"
     },
     {
-        title: "Diyabet Beslenmesi",
-        description: "Tip 1, Tip 2 diyabet ve insülin direnci durumlarında kan şekeri regülasyonuna yönelik tıbbi beslenme.",
+        title: "Tıbbi Beslenme Tedavisi",
+        description: "İnsülin direnci, diyabet, haşimato/tiroid hastalıkları ve PCOS (Polikistik Over) gibi klinik durumlarda kan değerlerini düzenleyici beslenme protokolleri.",
         icon: Activity,
+        badge: "Klinik"
     },
     {
-        title: "Fonksiyonel Tıp",
-        description: "Kronik hastalıklara kökten çözüm getiren, bütüncül ve kişiye özel beslenme yaklaşımları.",
+        title: "Fonksiyonel Tıp Beslenmesi",
+        description: "Kronik inflamasyon, sindirim problemleri (IBS/Geçirgen Bağırsak) ve otoimmün rahatsızlıklarda kök nedene odaklanan bütüncül beslenme tedavisi.",
         icon: HeartPulse,
+        badge: "Bütüncül Sağlık"
     },
     {
-        title: "Obezite Tedavisi",
-        description: "Multidisipliner yaklaşımla obezite cerrahisi öncesi ve sonrası diyet takibi.",
+        title: "Obezite & Cerrahi Sonrası",
+        description: "Obezite tedavisinde multidisipliner yaklaşımlar ve bariatrik cerrahi öncesi/sonrası dönemde güvenli, adım adım beslenme takibi.",
         icon: Apple,
+        badge: "Uzmanlık"
     },
     {
-        title: "Gebelik ve Emzirme",
-        description: "Bebeğinizin ve sizin sağlığınız için, bu özel dönemlere uygun planlanmış beslenme programları.",
+        title: "Gebelik & Emzirme Dönemi",
+        description: "Anne adayının besin depolarını koruyan, bebeğin gelişimini destekleyen ve emzirme döneminde anne sütü kalitesini optimize eden özel programlar.",
         icon: Baby,
+        badge: "Özel Takip"
     },
     {
-        title: "Yeme Bozuklukları",
-        description: "Psikodiyet yaklaşımı ile yeme davranış bozukluklarında (Anoreksiya, Bulimia vb.) beslenme terapisi.",
+        title: "Sürdürülebilir Beslenme Eğitimi",
+        description: "Katı diyet kısıtlamaları yerine besin ilişkisini şifalandıran, sezgisel yemeyi ve sağlıklı yaşam alışkanlıklarını öğreten kalıcı eğitimler.",
         icon: Brain,
+        badge: "Yaşam Tarzı"
     }
 ];
 
@@ -51,17 +57,24 @@ export default function Services() {
                     {services.map((service, index) => (
                         <div
                             key={index}
-                            className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300 border border-sage/5 group"
+                            className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-sage/5 group relative overflow-hidden flex flex-col justify-between"
                         >
-                            <div className="w-14 h-14 bg-sage/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-sage transition-colors duration-300">
-                                <service.icon className="w-7 h-7 text-sage group-hover:text-white transition-colors duration-300" />
+                            <div>
+                                <div className="flex justify-between items-start mb-6">
+                                    <div className="w-14 h-14 bg-sage/10 rounded-xl flex items-center justify-center group-hover:bg-sage transition-colors duration-300">
+                                        <service.icon className="w-7 h-7 text-sage group-hover:text-white transition-colors duration-300" />
+                                    </div>
+                                    <span className="text-[10px] uppercase tracking-wider font-bold text-sage bg-sage/10 px-2.5 py-1 rounded-full">
+                                        {service.badge}
+                                    </span>
+                                </div>
+                                <h3 className="text-xl font-bold text-charcoal mb-3 group-hover:text-sage transition-colors">
+                                    {service.title}
+                                </h3>
+                                <p className="text-charcoal/60 leading-relaxed text-sm">
+                                    {service.description}
+                                </p>
                             </div>
-                            <h3 className="text-xl font-bold text-charcoal mb-3 group-hover:text-sage transition-colors">
-                                {service.title}
-                            </h3>
-                            <p className="text-charcoal/60 leading-relaxed text-sm">
-                                {service.description}
-                            </p>
                         </div>
                     ))}
                 </div>
