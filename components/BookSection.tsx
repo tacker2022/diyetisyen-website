@@ -48,11 +48,7 @@ export default function BookSection() {
                             </a>
                         </div>
 
-                        <div className="mt-10 grid grid-cols-3 gap-8 border-t border-white/20 pt-8 max-w-lg mx-auto lg:mx-0">
-                            <div>
-                                <div className="text-3xl font-bold text-white mb-1">50+</div>
-                                <div className="text-white/60 text-sm">Tarif</div>
-                            </div>
+                        <div className="mt-10 grid grid-cols-2 gap-8 border-t border-white/20 pt-8 max-w-sm mx-auto lg:mx-0">
                             <div>
                                 <div className="text-3xl font-bold text-white mb-1">Bilimsel</div>
                                 <div className="text-white/60 text-sm">Yaklaşım</div>

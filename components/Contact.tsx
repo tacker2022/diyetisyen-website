@@ -52,7 +52,7 @@ export default function Contact() {
 
                     <div className="h-[400px] lg:h-auto bg-gray-200 rounded-2xl overflow-hidden shadow-lg relative">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.971938555986!2d29.1121!3d41.0287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac8f0c2a8b8c5%3A0x6b4c3b3b3b3b3b3b!2sAvrupa%20Konutlar%C4%B1%20Yamanevler!5e0!3m2!1str!2str!4v1700000000000!5m2!1str!2str"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.095881958759!2d29.1147473!3d41.0231582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac98195c65a3d%3A0x85826600b8805a39!2sUzman%20Diyetisyen%20Ye%C5%9Fim%20Nemutlu%20Torun!5e0!3m2!1str!2str!4v1716120000000!5m2!1str!2str"
                             width="100%"
                             height="100%"
                             style={{ border: 0 }}
